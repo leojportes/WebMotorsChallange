@@ -25,9 +25,14 @@
 Aplicação foi desenvolvida em [Swift](https://www.apple.com/br/swift/) por meio da IDE Xcode.
 A aplicação foi desenvolvida sem Storyboard, com telas e componentes viewcode.
  
-![detailScreen](https://user-images.githubusercontent.com/65302846/146732017-566f91e7-fe61-4f0c-b2d7-d7116a911f45.png)
-![firstScreen](https://user-images.githubusercontent.com/65302846/146732021-256f85ce-046d-4871-96b1-5b69386e0fc7.png)
-
+ div align="center"
+img src="https://user-images.githubusercontent.com/65302846/146732017-566f91e7-fe61-4f0c-b2d7-d7116a911f45.png" width="700px" /
+/div
+ 
+  div align="center"
+img src="https://user-images.githubusercontent.com/65302846/146732021-256f85ce-046d-4871-96b1-5b69386e0fc7.png" width="700px" /
+/div
+ 
 
 ## Possíveis Melhorias
 <b>Expansões</b>: Adicionar testes unitários da camada de network<br>
