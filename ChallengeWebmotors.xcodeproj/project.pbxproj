@@ -10,6 +10,7 @@
 		05AFB4904CF87F5B3E7DDE0A /* Pods_ChallengeWebmotorsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415BB7A82FA94203A11E4351 /* Pods_ChallengeWebmotorsTests.framework */; };
 		877E362A9405E84B63CEEC8D /* Pods_ChallengeWebmotors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D23568490B2BD0F0798602C /* Pods_ChallengeWebmotors.framework */; };
 		B08DFFC162B302AD124B8B4B /* Pods_ChallengeWebmotors_ChallengeWebmotorsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D4784B9BFEB4473901A2A3 /* Pods_ChallengeWebmotors_ChallengeWebmotorsUITests.framework */; };
+		C02A96E52770C16B006EE2BA /* IconLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02A96E42770C16B006EE2BA /* IconLeftView.swift */; };
 		C056EF102770543A00E89B7D /* VehiclesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056EF0F2770543A00E89B7D /* VehiclesViewControllerTests.swift */; };
 		C056EF2A27705B7600E89B7D /* VehiclesSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056EF2927705B7600E89B7D /* VehiclesSnapshotTests.swift */; };
 		C09B77B8276D9EFD0028176D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09B77B7276D9EFD0028176D /* AppDelegate.swift */; };
@@ -59,6 +60,7 @@
 		9BC4D70A7480C5C8B048A080 /* Pods-ChallengeWebmotors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeWebmotors.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeWebmotors/Pods-ChallengeWebmotors.debug.xcconfig"; sourceTree = "<group>"; };
 		A6D4784B9BFEB4473901A2A3 /* Pods_ChallengeWebmotors_ChallengeWebmotorsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeWebmotors_ChallengeWebmotorsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B880EB93F6AD24228B8ED584 /* Pods-ChallengeWebmotorsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeWebmotorsTests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeWebmotorsTests/Pods-ChallengeWebmotorsTests.release.xcconfig"; sourceTree = "<group>"; };
+		C02A96E42770C16B006EE2BA /* IconLeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconLeftView.swift; sourceTree = "<group>"; };
 		C056EF0F2770543A00E89B7D /* VehiclesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewControllerTests.swift; sourceTree = "<group>"; };
 		C056EF2927705B7600E89B7D /* VehiclesSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesSnapshotTests.swift; sourceTree = "<group>"; };
 		C09B77B4276D9EFD0028176D /* ChallengeWebmotors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeWebmotors.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +144,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C02A96E32770C11D006EE2BA /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				C02A96E42770C16B006EE2BA /* IconLeftView.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
 		C09B77AB276D9EFD0028176D = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +218,7 @@
 		C09B783727702A0B0028176D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C02A96E32770C11D006EE2BA /* UIComponents */,
 				C09B783F27702A6B0028176D /* Network */,
 				C09B783927702A1E0028176D /* Model */,
 				C09B783A27702A250028176D /* View */,
@@ -574,6 +585,7 @@
 				C09B7811276DB6470028176D /* NetworkError.swift in Sources */,
 				C09B77B8276D9EFD0028176D /* AppDelegate.swift in Sources */,
 				C0A80468277030D800AAEEF4 /* UIFont+Extensions.swift in Sources */,
+				C02A96E52770C16B006EE2BA /* IconLeftView.swift in Sources */,
 				C0A804B1277037DF00AAEEF4 /* DetailsViewController.swift in Sources */,
 				C0A804CA27703FF000AAEEF4 /* UIColor+Extensions.swift in Sources */,
 				C09B77BA276D9EFD0028176D /* SceneDelegate.swift in Sources */,

@@ -69,26 +69,26 @@ final class DetailsView: UIView, ViewCodeContract {
         return label
     }()
     
-    private lazy var yearReleaseLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .darkGray
-        label.font = UIFont.boldSystemFont(ofSize: 16)
+    private lazy var yearReleaseLabel: IconLeftView = {
+        let label = IconLeftView()
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    private lazy var vehicleColor: UILabel = {
-        let label = UILabel()
-        label.textColor = .darkGray
-        label.font = UIFont.boldSystemFont(ofSize: 16)
+    private lazy var vehicleColor: IconLeftView = {
+        let label = IconLeftView()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+
+    private lazy var kmVehicle: IconLeftView = {
+        let label = IconLeftView()
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    private lazy var kmVehicle: UILabel = {
-        let label = UILabel()
-        label.textColor = .darkGray
-        label.font = UIFont.boldSystemFont(ofSize: 16)
+    private lazy var hpVehicle: IconLeftView = {
+        let label = IconLeftView()
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -103,6 +103,7 @@ final class DetailsView: UIView, ViewCodeContract {
         detailView.addSubview(yearReleaseLabel)
         detailView.addSubview(vehicleColor)
         detailView.addSubview(kmVehicle)
+        detailView.addSubview(hpVehicle)
     }
     
     func setupConstraints() {
@@ -131,14 +132,22 @@ final class DetailsView: UIView, ViewCodeContract {
         yearReleaseLabel
             .topAnchor(in: versionLabel, attribute: .bottom, padding: 5)
             .leftAnchor(in: detailView, padding: 10)
-        
-        vehicleColor
-            .topAnchor(in: versionLabel, attribute: .bottom, padding: 5)
-            .leftAnchor(in: yearReleaseLabel, attribute: .right, padding: 30)
+            .heightAnchor(30)
         
         kmVehicle
-            .topAnchor(in: yearReleaseLabel, attribute: .bottom, padding: 10)
+            .topAnchor(in: yearReleaseLabel, attribute: .bottom, padding: 5)
             .leftAnchor(in: detailView, padding: 10)
+            .heightAnchor(30)
+        
+        vehicleColor
+            .topAnchor(in: kmVehicle, attribute: .bottom, padding: 5)
+            .leftAnchor(in: detailView,padding: 10)
+            .heightAnchor(30)
+        
+        hpVehicle
+            .topAnchor(in: vehicleColor, attribute: .bottom, padding: 5)
+            .leftAnchor(in: detailView,padding: 10)
+            .heightAnchor(30)
     }
     
     func setupConfiguration() {
@@ -153,13 +162,15 @@ final class DetailsView: UIView, ViewCodeContract {
                                 yearRelese: String,
                                 color: String,
                                 km: String) {
-        
+        let words = version.split{ $0.isWhitespace }.map{ String($0)}
         imageView.load(urlString: image)
         modelLabel.text = model
         versionLabel.text = version
-        yearReleaseLabel.text = yearRelese
-        vehicleColor.text = ("Cor: \(color)")
-        kmVehicle.text = ("KM: \(km)")
+        yearReleaseLabel.setup(title: yearRelese, image: UIImage(named: "ic_fab"), backgroundColor: .clear)
+        vehicleColor.setup(title: color, image: UIImage(named: "ic_pallet"), backgroundColor: .clear)
+        kmVehicle.setup(title: km, image: UIImage(named: "ic_km"), backgroundColor: .clear)
+        hpVehicle.setup(title: ("\(words[0]) \(words[1])"), image: UIImage(named: "ic_motor"), backgroundColor: .clear)
+        
     }
 
 }

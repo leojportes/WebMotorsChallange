@@ -137,7 +137,7 @@ final class VehiclesTableViewCell: UITableViewCell, ViewCodeContract {
         
         openIcon
             .bottomAnchor(in: baseView, padding: 10)
-            .rightAnchor(in: baseView, padding: 10)
+            .rightAnchor(in: baseView, padding: 12)
             .widthAnchor(25)
             .heightAnchor(25)
             
