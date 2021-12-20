@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_ChallengeWebmotors_ChallengeWebmotorsUITests : NSObject
+@end
+@implementation PodsDummy_Pods_ChallengeWebmotors_ChallengeWebmotorsUITests
+@end

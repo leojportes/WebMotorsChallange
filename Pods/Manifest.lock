@@ -1,0 +1,33 @@
+PODS:
+  - CoreFramework (0.1.0)
+  - iOSSnapshotTestCase (8.0.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 8.0.0)
+  - iOSSnapshotTestCase/Core (8.0.0)
+  - iOSSnapshotTestCase/SwiftSupport (8.0.0):
+    - iOSSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - CoreFramework (from `https://github.com/leojportes/CoreFramework.git`, branch `develop`)
+  - iOSSnapshotTestCase
+
+SPEC REPOS:
+  trunk:
+    - iOSSnapshotTestCase
+
+EXTERNAL SOURCES:
+  CoreFramework:
+    :branch: develop
+    :git: https://github.com/leojportes/CoreFramework.git
+
+CHECKOUT OPTIONS:
+  CoreFramework:
+    :commit: af7d5884c43e1b0dc52e311f74e83c176eb6d784
+    :git: https://github.com/leojportes/CoreFramework.git
+
+SPEC CHECKSUMS:
+  CoreFramework: 0186e3f00ff00ed5282cbc0af048ccb4bbf45348
+  iOSSnapshotTestCase: a670511f9ee3829c2b9c23e6e68f315fd7b6790f
+
+PODFILE CHECKSUM: 1587d4d09e080d13b47b3e661d5cd167f3be3655
+
+COCOAPODS: 1.11.2
