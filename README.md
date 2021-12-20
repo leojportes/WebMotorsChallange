@@ -26,11 +26,11 @@ Aplicação foi desenvolvida em [Swift](https://www.apple.com/br/swift/) por mei
 A aplicação foi desenvolvida sem Storyboard, com telas e componentes viewcode.
  
 <div align="center">
-<img src="https://user-images.githubusercontent.com/65302846/146732017-566f91e7-fe61-4f0c-b2d7-d7116a911f45.png" width="500px" />
+<img src="https://user-images.githubusercontent.com/65302846/146732017-566f91e7-fe61-4f0c-b2d7-d7116a911f45.png" width="200px" />
 </div>
  
 <div align="center">
-<img src="https://user-images.githubusercontent.com/65302846/146732021-256f85ce-046d-4871-96b1-5b69386e0fc7.png" width="500px" />
+<img src="https://user-images.githubusercontent.com/65302846/146732021-256f85ce-046d-4871-96b1-5b69386e0fc7.png" width="200px" />
 </div>
  
 
