@@ -15,7 +15,7 @@
  
  [Build](#build)
  
- [Dependências](#dependencias)
+ [Dependências](#dependências)
 
 
 ## Descrição do Projeto
